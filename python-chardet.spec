@@ -14,7 +14,7 @@ Group:		Development/Python
 Source:		http://chardet.feedparser.org/download/chardet-%{version}.tgz
 URL:		http://chardet.feedparser.org/
 BuildRoot:	%{_tmppath}/%{name}-root
-%py_requires
+%py_requires -d
 BuildArch:	noarch
 
 %description
