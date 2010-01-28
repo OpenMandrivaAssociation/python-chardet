@@ -3,13 +3,13 @@
 %define name	python-%{module}
 %define oname	chardet
 %define version	2.0.1
-%define rel	1
+%define rel	2
 
 Summary:	Character encoding auto-detection in Python
 Name:		%{name}
 Version:	%{version}
 Release:	%mkrel %{rel}
-License:	LGPLv2.1+
+License:	LGPLv2+
 Group:		Development/Python
 Source:		http://chardet.feedparser.org/download/python2-%{module}-%{version}.tgz
 URL:		http://chardet.feedparser.org/
