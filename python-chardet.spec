@@ -1,14 +1,13 @@
-
 %define module	chardet
 %define name	python-%{module}
-%define oname	chardet
 %define version	2.0.1
-%define rel	2
+%define rel		3
+%define	release	%mkrel %rel
 
 Summary:	Character encoding auto-detection in Python
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel %{rel}
+Release:	%{release}
 License:	LGPLv2+
 Group:		Development/Python
 Source:		http://chardet.feedparser.org/download/python2-%{module}-%{version}.tgz
@@ -27,12 +26,11 @@ Character encoding auto-detection in Python. As smart as your browser.
 %{__python} setup.py build
 
 %install
-rm -rf %{buildroot}
-%{__python} setup.py install \
-	--root=%{buildroot}
+%__rm -rf %{buildroot}
+PYTHONDONTWRITEBYTECODE= %{__python} setup.py install --root=%{buildroot}
 
 %clean
-rm -rf %{buildroot}
+%__rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
