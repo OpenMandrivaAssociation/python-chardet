@@ -37,3 +37,26 @@ PYTHONDONTWRITEBYTECODE= %{__python} setup.py install --root=%{buildroot}
 %doc docs/*
 %{py_sitedir}/*.egg-info
 %{py_sitedir}/%{module}
+
+
+%changelog
+* Tue Apr 24 2012 Lev Givon <lev@mandriva.org> 2.0.1-3mdv2012.0
++ Revision: 793057
+- Rebuild to provide pythonegg(chardet)
+
+* Thu Jan 28 2010 Rémy Clouard <shikamaru@mandriva.org> 2.0.1-2mdv2011.0
++ Revision: 497655
+- fix license
+
+* Thu Jan 28 2010 Rémy Clouard <shikamaru@mandriva.org> 2.0.1-1mdv2010.1
++ Revision: 497650
+- bump release
+
+* Fri May 08 2009 Anssi Hannula <anssi@mandriva.org> 1.0.1-1mdv2010.0
++ Revision: 373562
+- new version
+- fix buildroot and URL
+- use py_requires
+- drop --optimize=2
+- initial Mandriva release
+
