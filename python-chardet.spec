@@ -9,6 +9,7 @@ Group:		Development/Python
 Source:		https://pypi.python.org/packages/source/c/chardet/chardet-%{version}.tar.gz
 URL:		http://chardet.feedparser.org/
 BuildRequires:	python-devel
+BuildRequires:	python-distribute
 BuildArch:	noarch
 
 %description
