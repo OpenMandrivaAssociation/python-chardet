@@ -25,7 +25,7 @@ python setup.py build
 PYTHONDONTWRITEBYTECODE=  python setup.py install --root=%{buildroot}
 
 %files
-%doc python/docs/*
+%doc docs/*
 %{_bindir}/chardetect
 %{py_puresitedir}/*.egg-info
 %{py_puresitedir}/%{module}
