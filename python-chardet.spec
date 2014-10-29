@@ -2,8 +2,8 @@
 
 Summary:	Character encoding auto-detection in Python
 Name:		python-%{module}
-Version:	2.1.1
-Release:	2
+Version:	2.2.1
+Release:	1
 License:	LGPLv2+
 Group:		Development/Python
 Source:		https://pypi.python.org/packages/source/c/chardet/chardet-%{version}.tar.gz
@@ -33,7 +33,7 @@ cp -r python2 python3
 
 %build
 pushd python2
-%{__python} setup.py build
+python setup.py build
 popd
 
 pushd python3
@@ -47,7 +47,7 @@ mv %{buildroot}/%{_bindir}/chardetect.py %{buildroot}/%{_bindir}/python3-chardet
 popd
 
 pushd python2
-PYTHONDONTWRITEBYTECODE=  %{__python} setup.py install --root=%{buildroot}
+PYTHONDONTWRITEBYTECODE=  python setup.py install --root=%{buildroot}
 popd
 
 %clean
