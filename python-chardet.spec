@@ -3,7 +3,7 @@
 Summary:	Character encoding auto-detection in Python
 Name:		python-%{module}
 Version:	2.2.1
-Release:	1
+Release:	2
 License:	LGPLv2+
 Group:		Development/Python
 Source:		https://pypi.python.org/packages/source/c/chardet/chardet-%{version}.tar.gz
