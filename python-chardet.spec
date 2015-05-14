@@ -49,7 +49,7 @@ popd
 %{py_puresitedir}/*.egg-info
 %{py_puresitedir}/%{module}
 
-%description -n python2-%{module}
+%files -n python2-%{module}
 %{_bindir}/python2-chardetect
 %{py2_puresitedir}/*.egg-info
 %{py2_puresitedir}/%{module}
