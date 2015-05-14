@@ -19,6 +19,7 @@ Character encoding auto-detection in Python. As smart as your browser.
 Summary:	Python 2 module for %{module}
 Group:		Development/Python
 BuildRequires:	pkgconfig(python2)
+BuildRequires:	python2-setuptools
 
 %description -n python2-%{module}
 Python 2 module for %{module}.
