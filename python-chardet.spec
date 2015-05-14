@@ -37,19 +37,19 @@ popd
 
 %install
 PYTHONDONTWRITEBYTECODE=  %{__python} setup.py install --root=%{buildroot}
+mv -f %{buildroot}%{_bindir}/{,python3-}chardetect
 
 pushd %{py2dir} 
 PYTHONDONTWRITEBYTECODE=  %{__python2} setup.py install --root=%{buildroot}
-mv -f %{buildroot}%{_bindir}/{,python2-}chardetect
 popd
 
 %files
 %doc docs/*
-%{_bindir}/chardetect
+%{_bindir}/python3-chardetect
 %{py_puresitedir}/*.egg-info
 %{py_puresitedir}/%{module}
 
 %files -n python2-%{module}
-%{_bindir}/python2-chardetect
+%{_bindir}/chardetect
 %{py2_puresitedir}/*.egg-info
 %{py2_puresitedir}/%{module}
