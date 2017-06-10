@@ -1,4 +1,2 @@
-removed_sources:
-  chardet-2.1.1.tar.gz: eab8fb77c852da706e07c87c6b365ccc02c1751a
 sources:
-  chardet-2.2.1.tar.gz: b59690c286ae2bc515da9b34eb30629d72f02e27
+  chardet-3.0.4.tar.gz: 4766fb07e700945a7085d073257f1f320d037ce8

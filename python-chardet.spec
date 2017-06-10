@@ -2,12 +2,12 @@
 
 Summary:	Character encoding auto-detection in Python
 Name:		python-%{module}
-Version:	2.2.1
-Release:	3
+Version:	3.0.4
+Release:	1
 License:	LGPLv2+
 Group:		Development/Python
-Source:		https://pypi.python.org/packages/source/c/chardet/chardet-%{version}.tar.gz
-URL:		http://chardet.feedparser.org/
+Source0:	https://pypi.python.org/packages/fc/bb/a5768c230f9ddb03acc9ef3f0d4a3cf93462473795d18e9535498c8f929d/chardet-%{version}.tar.gz
+URL:		https://pypi.python.org/pypi/chardet
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	python-distribute
 BuildArch:	noarch
