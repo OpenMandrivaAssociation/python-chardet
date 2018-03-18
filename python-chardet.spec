@@ -3,7 +3,7 @@
 Summary:	Character encoding auto-detection in Python
 Name:		python-%{module}
 Version:	3.0.4
-Release:	2
+Release:	3
 License:	LGPLv2+
 Group:		Development/Python
 Source0:	https://pypi.python.org/packages/fc/bb/a5768c230f9ddb03acc9ef3f0d4a3cf93462473795d18e9535498c8f929d/chardet-%{version}.tar.gz
@@ -20,6 +20,7 @@ Summary:	Python 2 module for %{module}
 Group:		Development/Python
 BuildRequires:	pkgconfig(python2)
 BuildRequires:	python2-setuptools
+BuildRequires:	python2-pkg-resources
 
 %description -n python2-%{module}
 Python 2 module for %{module}.
