@@ -2,7 +2,7 @@
 
 Summary:	Character encoding auto-detection in Python
 Name:		python-%{module}
-Version:	7.4.3
+Version:	7.6.0
 Release:	1
 License:	LGPLv2+
 Group:		Development/Python
